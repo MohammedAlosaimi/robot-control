@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(192, 205, 206);
+}
+
+/* Language */
+
+#lan {
+    background-color: #536966;
+    margin: auto auto 50px auto;
+}
+
+.language {
+    border: none;
+    background-color: #536966;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+}
+
+.language:hover {
+    background-color: #92b6b1;
+    color: black;
+}
+
+.hidden {
+    color: #7f9794;
+}
+
+/* Container */
+
+#container {
+    background-color: rgb(231, 237, 238);
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.motor {
+    margin-top: 15px;
+}
+
+.buttons{
+    margin-top: 10px;
+}
+
+#save {
+    margin-top: 20px;
+}
+
+.button {
+    height: 25px;
+    background-color: #738582;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.button-A {
+    width: 20%;
+    margin: 4px 2px;
+}
+
+#reset {
+    position: relative;
+    left: 50%;
+}
+
+#forward, #backward, #start-stop {
+    width: 50%;
+    margin: 10px;
+}
+
+#up, #bottom, #run {
+    text-align: center;
+}
+
+#right, #left {
+    width: 25%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+#right {
+    float: right;
+}
+
+#left {
+    float: left;
+    
+}
+
+#image {
+    height: 150px;
+    width: 50%;
+}
+
+/* border: 3px solid green; */
+
+/* Range Silder*/
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 8px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #01744a;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #036e47;
+    cursor: pointer;
+  }
