@@ -20,15 +20,14 @@ const imageLink = "/phpinvisualStudioCode/robot-control/images/";
 
 // when submit form A (angles)
 function submitFormA(){
-    var motor1 = $("#m1").val();
-    var motor2 = $("#m2").val();
-    var motor3 = $("#m3").val();
-    var motor4 = $("#m4").val();
-    var motor5 = $("#m5").val();
-    var motor6 = $("#m6").val();
+    var motor1 = document.getElementById("m1").value;
+    var motor2 = document.getElementById("m2").value;
+    var motor3 = document.getElementById("m3").value;
+    var motor4 = document.getElementById("m4").value;
+    var motor5 = document.getElementById("m5").value;
+    var motor6 = document.getElementById("m6").value;
     // stor in the database the angles
-    $.post("/phpinvisualStudioCode/robot-control/back-end/angles.php", {m1: motor1, m2: motor2,
-    m3: motor3, m4: motor4, m5: motor5, m6: motor6}, function(data){
+    $.post("/phpinvisualStudioCode/robot-control/back-end/angles.php", {m1: motor1, m2: motor2, m3: motor3, m4: motor4, m5: motor5, m6: motor6}, function(data){
         return confirm( data);
     });
 }
@@ -37,6 +36,13 @@ function submitFormA(){
 function submitFormB(){
     var runVal = runValue.value;
 
+    if(runVal == 0){
+        runAngles.innerHTML = "On";
+        runValue.value = 1;
+    } else {
+        runAngles.innerHTML = "Off";
+        runValue.value = 0;
+    }
     // stor in the database the angles
     $.post("/phpinvisualStudioCode/robot-control/back-end/runAngles.php", {run: runVal}, function(data){
             return confirm( data);
@@ -168,7 +174,7 @@ function enLanguage(){
     });
     document.getElementById("save").innerHTML = "Save";
     if(runValue.value == 1){
-        runAngles.innerHTML = "Run";
+        runAngles.innerHTML = "On";
     } else{
         runAngles.innerHTML = "Off";
     }
@@ -211,7 +217,7 @@ fetch("/PHPinVisualStudioCode/robot-control/back-end/runAnglesInfo.php").then(
         run.innerHTML = "Off";
     } else{
         runValue.value = 1;
-        run.innerHTML = "Run";
+        run.innerHTML = "On";
     }
 })
 .catch(err => {
