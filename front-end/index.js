@@ -16,7 +16,7 @@ const left = document.getElementById("left");
 const right = document.getElementById("right");
 const backward = document.getElementById("backward");
 const image = document.getElementById("image");
-const imageLink = "/phpinvisualStudioCode/robot-control-panel/image/";
+const imageLink = "/phpinvisualStudioCode/robot-control/images/";
 
 // when submit form A (angles)
 function submitFormA(){
@@ -27,7 +27,7 @@ function submitFormA(){
     var motor5 = $("#m5").val();
     var motor6 = $("#m6").val();
     // stor in the database the angles
-    $.post("/phpinvisualStudioCode/robot-control-panel/back-end/angles.php", {m1: motor1, m2: motor2,
+    $.post("/phpinvisualStudioCode/robot-control/back-end/angles.php", {m1: motor1, m2: motor2,
     m3: motor3, m4: motor4, m5: motor5, m6: motor6}, function(data){
         return confirm( data);
     });
@@ -38,7 +38,7 @@ function submitFormB(){
     var runVal = runValue.value;
 
     // stor in the database the angles
-    $.post("/phpinvisualStudioCode/robot-control-panel/back-end/runAngles.php", {run: runVal}, function(data){
+    $.post("/phpinvisualStudioCode/robot-control/back-end/runAngles.php", {run: runVal}, function(data){
             return confirm( data);
         });
 }
@@ -59,7 +59,7 @@ function submitMove( move ){
         }
     }
     // stor in the database the move
-    $.post("/phpinvisualStudioCode/robot-control-panel/back-end/moves.php", {moves: move}, function(data){
+    $.post("/phpinvisualStudioCode/robot-control/back-end/moves.php", {moves: move}, function(data){
         return confirm( data);
     });
 }
@@ -80,7 +80,7 @@ function submitRun(){
     }
 
     // store in the database
-    $.post("/phpinvisualStudioCode/robot-control-panel/back-end/runMoves.php", {run: action}, function(data){
+    $.post("/phpinvisualStudioCode/robot-control/back-end/runMoves.php", {run: action}, function(data){
         return confirm( data);
     });
 }
