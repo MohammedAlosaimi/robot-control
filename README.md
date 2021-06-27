@@ -30,24 +30,24 @@ The interface is designed in a simple way for ease of use. It also met the main 
 </p>
     <br>
 <p align="center">
-    <img src="image/mobileInterfaceE.png" alt="mobile interface" width="375">
+    <img src="images/mobileInterfaceE.png" alt="mobile interface" width="375">
     <p align="center">
         figure 2: Mobile web interface.
     </p>
 </p>
 In the interface, the gif and image are used to make the current state of the robot visible to the user. see figure 3,4,5,6,7, and 8
 <p align="center">
-    <img src="image/stop.gif" alt="Stop state" width="150"><br>
+    <img src="images/stop.gif" alt="Stop state" width="150"><br>
     figure 3: Stop state.<br>
-    <img src="image/start.png" alt="Start stat (English)" width="150"><br>
+    <img src="images/start.png" alt="Start stat (English)" width="150"><br>
     figure 4: Start stat.<br>
-    <img src="image/forward.gif" alt="Forward move" width="150"><br>
+    <img src="images/forward.gif" alt="Forward move" width="150"><br>
     figure 5: Forward move.<br>
-    <img src="image/left.gif" alt="Left move" width="150"><br>
+    <img src="images/left.gif" alt="Left move" width="150"><br>
     figure 6: Left move.<br>
-    <img src="image/right.gif" alt="Right move" width="150"><br>
+    <img src="images/right.gif" alt="Right move" width="150"><br>
     figure 7: Right move.<br>
-    <img src="image/backward.gif" alt="Backward move" width="150"><br>
+    <img src="images/backward.gif" alt="Backward move" width="150"><br>
     figure 8: Backward move.<br>
 </p>
 
@@ -111,7 +111,7 @@ This section explains what each button does and explains the implementation of t
     figure 9: buttons
 </p>
 <p align="center">
-    <img src="image/languageButton.png" alt="language button" width="200">
+    <img src="images/languageButton.png" alt="language button" width="200">
     <br/>
     figure 10: Language button
 </p>
