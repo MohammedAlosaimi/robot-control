@@ -101,7 +101,7 @@ This section explains what each button does and explains the implementation of t
 ### Buttons
 - save button: Used to save the angles in the database (figure 9).
 - reset button: Used to reset the value to the main value (figure 9).
-- run/off button: Used to save the angle action in the database (figure 9).
+- on/off button: Used to save the angle action in the database (figure 9).
 - forward, left, right, backward button: Used to Used to give a command to move in the specified direction (figure 9).
 - start/stop button: Used to  give a command to start/stop move (figure 9).
 - عربي/english button: Used to change the language (figure 10).
